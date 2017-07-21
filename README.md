@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/3129129/22811426/bb69dc06-ef0c-11e6-8092-a0bea9060b35.png"/></p>
 
 [![Build status: Linux](https://img.shields.io/travis/coryhouse/react-slingshot.svg?style=flat-square)](https://travis-ci.org/coryhouse/react-slingshot)
@@ -75,3 +76,6 @@ Slingshot offers a rich development experience using the following technologies:
 The starter kit includes a working example app that puts all of the above to use.
 ## Questions?
 Check out the [FAQ](/docs/FAQ.md)
+=======
+# blackbox-ui
+>>>>>>> dc4ce9a3eebe04e7647552954c7657d4158d49e6
