@@ -1,14 +1,23 @@
 import Axios from 'axios';
 // ./src/actions/bookActions.js
 // API URL
-const apiUrl = 'http://localhost:3030/airplanes/with_directions';
-// Sync ActioPlanesn
+const apiUrl = 'http://localhost:3030/airplanes/all';
+// Sync ActioPlanes
 export const fetchPlanesSuccess = (planes) => {
   return {
     type: 'FETCH_PLANES_SUCCESS',
     planes 
   };
-};
+}
+
+export const fetchPlanesFail = (error) => {
+  return {
+    type: 'FETCH_PLANES_FAIL',
+    error
+  };
+}
+
+
 //Async Action
 export const fetchPlanes = () => {
   // Returns a dispatcher function
@@ -22,6 +31,7 @@ export const fetchPlanes = () => {
         dispatch(fetchPlanesSuccess(response.data));
       })
       .catch(error => {
+        dispatch(fetchPlanesFail(error))
         throw(error);
       });
   };

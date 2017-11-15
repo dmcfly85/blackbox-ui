@@ -3,7 +3,14 @@ import {Link} from 'react-router';
 
 const App = (props) => {
   return (
-    <div className="container">
+
+    <div>
+    {props.children}
+
+    {/*
+
+
+     <div className="container">
       <nav className="navbar navbar-default">
         <div className="container-fluid">
           <div className="navbar-header">
@@ -14,12 +21,17 @@ const App = (props) => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/books">Book</Link></li>
               <li><Link to="/Planes">Planes</Link></li>
+
+
             </ul>
           </div>
         </div>
       </nav>
-      {/* Each smaller components */}
+
       {props.children}
+
+    </div> */}
+    <Link to="/Planes">Planes</Link>
     </div>
   );
 };
