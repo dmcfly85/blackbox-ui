@@ -6,7 +6,7 @@ const apiUrl = 'http://localhost:3030/airplanes/all';
 export const fetchPlanesSuccess = (planes) => {
   return {
     type: 'FETCH_PLANES_SUCCESS',
-    planes 
+    planes
   };
 }
 
@@ -28,7 +28,10 @@ export const fetchPlanes = () => {
       .then(response => {
         // Dispatch another action
         // to consume data
-        dispatch(fetchPlanesSuccess(response.data));
+        let planes = response.data.filter(plane => {
+          return plane.directionToLook >= 0;
+        })
+        dispatch(fetchPlanesSuccess(planes));
       })
       .catch(error => {
         dispatch(fetchPlanesFail(error))
