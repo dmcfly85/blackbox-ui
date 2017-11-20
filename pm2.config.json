@@ -1,0 +1,10 @@
+{
+"apps": 
+	[ 
+	{
+      "name": "blackbox-ui",
+      "script": "npm",
+      "args": "run open:dist"
+	}
+	]
+}
