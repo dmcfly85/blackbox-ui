@@ -28,7 +28,7 @@ Boarding Pass
   box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
   overflow: hidden;
   text-transform: uppercase;
-  margin: 75px;
+  margin: 35px;
 
   small {
     display: block;
@@ -48,10 +48,14 @@ Boarding Pass
   & header {
     background: linear-gradient(to bottom, #36475f, #2c394f);
     padding: 1.6vh 2.2vh;
-    height: 9em;
+    height: 5em;
 
     .logo {
       float: left;
+
+      img {
+        width: 50%;
+      }
     }
 
     .flight {

@@ -36,10 +36,10 @@ class Plane extends React.Component {
               <div className="logo">
                 <img src={require('../../../src/images/blackbox-logo.png')}/>
               </div>
-              <div className="flight">
+              {/*   <div className="flight">
                 <small>Hex</small>
                 <strong>{b.hex}</strong>
-              </div>
+              </div> */}
             </header>
 
             <section className="basicInfo">
