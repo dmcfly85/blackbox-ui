@@ -28,7 +28,7 @@ class Plane extends React.Component {
         <BoardingPassSvgData></BoardingPassSvgData>
         <canvas style={{display: this.props.planes.length > 0 ? 'none' : 'block'}} id="radar"/>
 
-        {this.props.planes.map((b, i) =>
+        {this.props.planes.map((b) =>
 
           (<div className="boarding-pass" key={b.hex}>
 
@@ -133,7 +133,7 @@ class Plane extends React.Component {
 }
 
 // Maps state from store to props
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     // You can now say this.props.books
     planes: state.planes,

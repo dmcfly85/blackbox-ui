@@ -1,4 +1,9 @@
 
+/* eslint no-inner-declarations: 0 */
+
+//radar animation by @culithay https://codepen.io/culithay/pen/raOLwP
+//TODO refactor to proper js
+
 const radarSVG = function() {
 
     var canvas = document.getElementById('radar');
@@ -31,6 +36,7 @@ const radarSVG = function() {
         ctx.stroke();
         window.setTimeout(Rardar, 10);
       }
+
       raf(Rardar);
     }
   }

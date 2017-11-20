@@ -1,7 +1,7 @@
 // ./src/components/book/BookPage.js
 import React from 'react';
 import { connect } from 'react-redux';
-import * as bookActions from '../../actions/bookActions';
+//import * as bookActions from '../../actions/bookActions';
 
 class Book extends React.Component{
   constructor(props){
@@ -38,7 +38,7 @@ class Book extends React.Component{
 }
 
 // Maps state from store to props
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     // You can now say this.props.books
     books: state.books
@@ -46,10 +46,10 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 // Maps actions to props
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
   return {
   // You can now say this.props.createBook
-    createBook: book => dispatch(bookActions.createBook(book))
+    //createBook: book => dispatch(bookActions.createBook(book))
   }
 };
 
