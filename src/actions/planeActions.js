@@ -1,7 +1,9 @@
 import Axios from 'axios';
 // ./src/actions/bookActions.js
 // API URL
-const apiUrl = 'http://localhost:3030/airplanes/all';
+//TODO Move to config or command line arg
+const apiUrl = 'http://blackbox.local:3030/airplanes/all';
+
 // Sync ActioPlanes
 export const fetchPlanesSuccess = (planes) => {
   return {
